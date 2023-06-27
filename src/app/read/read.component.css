@@ -1,0 +1,35 @@
+.Searchbutton {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-top: 10%;
+    padding-left: 50%;
+    
+  }
+  
+  .search-input::placeholder {
+    margin-right: 10px;
+    text-align: start;
+  }
+  
+ .form-control {
+    border-radius: 15px;
+    padding: 12px 20px;
+  }
+ .button{
+     padding-left: 1pc;
+     height: 50%;
+ }
+ .body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/16.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  background-color: rgb(223, 219, 215);;
+}

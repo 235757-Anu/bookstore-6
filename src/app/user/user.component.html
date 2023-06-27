@@ -1,0 +1,32 @@
+<div class="header">
+  <div class="logo-container">
+    <div class="logo"><img src="assets/2.png" alt="Logo"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a routerLink="home" class="btn btn-dark">ReadList</a></li>
+    <li><button  class="btn btn-dark" routerLink="">Logout</button></li>
+  </ul>
+</div>
+
+<div class="body">
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let b of books; let i = index;">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card d-flex flex-column my-3"> <!-- Added 'my-3' class for margin -->
+            <img class="card-img-top" [src]="b.imageUrl" alt="Card image cap" style="height: 400px;">
+            <div class="card-body flex-grow-1">
+         
+              <button type="button" (click)="toRead(b)" class="btn btn-dark" routerLink="/readbook">
+                <span class="m-2">Read</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

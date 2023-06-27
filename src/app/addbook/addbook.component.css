@@ -1,0 +1,88 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/13.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 34rem;
+  margin-inline: 17px;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90vw; /* Adjust width to your preference */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Searchbutton {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-top: 10%;
+}
+
+.search-input::placeholder {
+  margin-right: 10px;
+  text-align: start;
+}
+
+button {
+  border-radius: 20px;
+  padding: 12px 20px;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+}
+
+.containerbook {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+    margin-inline: 0;
+  }
+
+  .search-container {
+    top: 50px;
+  }
+
+  .container {
+    margin-top: 10px;
+  }
+}

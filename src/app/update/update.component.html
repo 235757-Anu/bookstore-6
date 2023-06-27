@@ -1,0 +1,85 @@
+<app-header></app-header>
+<div class="body">
+  <div class="container">
+    <div class="search-container mt-9">
+      <div class="form-group col mt-2 mb-2">
+        <div class="Searchbutton">
+          <input type="text" name="title" class="form-control" value="" placeholder="Search here...">
+          <div class="button">
+            <button class="btn btn-dark mb-10">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-2" *ngFor="let b of books">
+      <div class="row align-items-center">
+        <div class="col-sm-2">
+          <img [src]="b.imageUrl" width="100%">
+        </div>
+        <div class="col-sm-10">
+          <div class="card-body">
+            <h5 class="card-title">{{ b.title }}</h5>
+            <p class="my-1 text-muted">
+              <strong>Authors:</strong> {{ b.author }}
+            </p>
+            <p class="my-1 text-muted">
+              <strong>Publish Year:</strong> {{ b.publishYear }}
+            </p>
+            <p class="my-1 text-muted">
+              <strong>Page Count:</strong> {{ b.pageCount }}
+            </p>
+            <p class="my-1 text-muted">
+              <strong>Language:</strong> {{ b.language }}
+            </p>
+            <p class="my-1">
+              <strong>Summary:</strong>
+            </p>
+            <p class="my-1">
+              {{ b.summary }}
+            </p>
+            <button type="button" (click)="toUpdate(b)" class="btn btn-outline-secondary">
+              <span class="m-2">Update</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="card mb-2" *ngFor="let b of books">
+    <div class="row align-items-center">
+      <div class="col-sm-2">
+        <img [src]="b.imageUrl" width="100%">
+      </div>
+      <div class="col-sm-10">
+        <div class="card-body">
+          <h5 class="card-title">{{ b.title }}</h5>
+          <p class="my-1 text-muted">
+            <strong>Authors:</strong> {{ b.author }}
+          </p>
+          <p class="my-1 text-muted">
+            <strong>Publish Year:</strong> {{ b.publishYear }}
+          </p>
+          <p class="my-1 text-muted">
+            <strong>Page Count:</strong> {{ b.pageCount }}
+          </p>
+          <p class="my-1 text-muted">
+            <strong>Language:</strong> {{ b.language }}
+          </p>
+          <p class="my-1">
+            <strong>Summary:</strong>
+          </p>
+          <p class="my-1">
+            {{ b.summary }}
+          </p>
+  
+          <button type="button" (click)="toUpdate(b)" class="btn btn-outline-secondary">
+            <span class="m-2">Update</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
